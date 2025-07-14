@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smiley Coin Dodger v1.1 от МаксиGames</title>
+<meta charset="UTF-8">
+<style>
+body {
+    background-color: #E0F7FA;
+    color: #004D40;
+    margin: 0;
+    font-family: Courier New;
+}
+
+center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 0;
+    padding: 15px;
+}
+
+#header {
+    background-color: #80DEEA;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+#downloadButton {
+    background-color: #216e52;
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 18px 50px;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+    margin: 20px 0 40px 0;
+    transition: background 0.3s;
+    border: 3px solid #0d4432;
+    cursor: pointer;
+}
+
+#downloadButton:hover {
+    background-color: #1a5641;
+}
+
+#gameInfo {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 85%;
+}
+
+#gameInfo table td, #gameInfo table th {
+  border: 0;
+}
+
+</style>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<center>
+<!-- Шапка -->
+<div id="header">
+    <font size="7">
+        <b>😊 Smiley Coin Dodger v1.1 🎮</b>
+    </font>
+</div>
+
+<br>
+
+<!-- Главный контент -->
+<div id="gameInfo">
+  <table width="90%" cellpadding="20">
+    <tr>
+      <td width="60%" valign="top">
+        <!-- Описание -->
+        <font size="5">
+          <b>▶ ОБ ИГРЕ:</b><br><br>
+          ⚫ Управляйте смайликом <b>(0-0)</b> в консоли Windows<br>
+          ⚫ Собирайте монеты <b>$</b> и избегайте шипов <b>A</b><br>
+          ⚫ Контроль: <b>W</b> (вверх), <b>S</b> (вниз), <b>A</b> (влево), <b>D</b> (вправо)<br>
+          ⚫ <b>10</b> опасных шипов на каждом уровне!<br>
+          <br>
+          <b>🔥 НОВОЕ В ВЕРСИИ 1.1:</b><br>
+          ✓ Оптимизирована скорость игры<br>
+          ✓ Исправлены коллизии объектов<br>
+          ✓ Улучшено управление<br>
+          ✓ Добавлены анимации<br><br>
+          
+          <b>📍 Как начать:</b><br>
+          1. Скачайте игру<br>
+          2. Распакуйте архив<br>
+          3. Запустите <b>Smiley Coin Dodger 1.1 (first release) (1).bat</b><br>
+          4. Нажмите <b>P</b> для старта<br>
+        </font>
+        
+        <!-- Игровые символы -->
+        <table width="100%" style="margin-top:20px;">
+          <tr>
+            <td align="center">
+              <font size="5">
+                <b>⚔️ ИГРОВЫЕ ОБЪЕКТЫ:</b><br>
+                <table cellpadding="10">
+                  <tr>
+                    <td width="100">😊 Персонаж:</td>
+                    <td><font size="6"><b>(0-0)</b></font></td>
+                  </tr>
+                  <tr>
+                    <td>💰 Монета:</td>
+                    <td><font size="6"><b>$</b></font></td>
+                  </tr>
+                  <tr>
+                    <td>☠️ Шипы:</td>
+                    <td><font size="6"><b>A</b></font></td>
+                  </tr>
+                  <tr>
+                    <td>🏆 Победа:</td>
+                    <td><font size="6"><b>($-$)</b></font></td>
+                  </tr>
+                  <tr>
+                    <td>💀 Поражение:</td>
+                    <td><font size="6"><b>(X-X)</b></font></td>
+                  </tr>
+                </table>
+              </font>
+            </td>
+          </tr>
+        </table>
+      </td>
+      
+      <td width="40%" valign="top">
+        <!-- Скриншот консоли -->
+        <table width="100%" bgcolor="black">
+          <tr>
+            <td>
+              <font face="Courier New" color="white" size="1">
+                <pre>
+ +== Smiley Coin Dodger v1.1 ==+
+                                
+                                
+          (0-0)                   $     
+                                
+                        A              
+                                
+        A                              
+                   A                   
+                                
+          A            A               
+                                
+                                
+                                
+            A         A                
+                                
+                                
+                                
+                    A                  
+                                
+                                
+                                
+                                
+ USE WASD KEYS | PRESS Q TO QUIT
+                </pre>
+              </font>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+<!-- Кнопка скачивания -->
+<a id="downloadButton" href="#" onclick="forceDownload()">
+  ⬇ СКАЧАТЬ ВЕРСИЮ 1.1
+</a>
+
+<!-- Раздел разработчика -->
+<table width="100%" bgcolor="#26C6DA" cellpadding="15" style="margin-top:20px;">
+  <tr>
+    <td align="center">
+      <font size="5">
+        <b>👨‍💻 РАЗРАБОТЧИК: МаксиGames</b><br>
+        <font size="6">📱 +7 906 419 66 22</font>
+      </font>
+    </td>
+  </tr>
+</table>
+
+<!-- Системные требования -->
+<table width="70%" cellpadding="15" bgcolor="#B3E5FC" style="border-radius:10px; margin:30px 0;">
+  <tr>
+    <td align="center">
+      <font size="4">
+        <b>⚙ СИСТЕМНЫЕ ТРЕБОВАНИЯ:</b><br>
+        Windows 7/10/11 | Command Prompt | 1 МБ свободного места<br>
+        Внимание: Для работы игры необходим .BAT-файл в распакованном виде!
+      </font>
+    </td>
+  </tr>
+</table>
+
+<!-- Футер -->
+<table width="100%" bgcolor="#00838F" cellpadding="10">
+  <tr>
+    <td align="center">
+      <font size="3" color="white">
+        © 2023 МаксиGames | Smiley Coin Dodger v1.1 | Все права защищены
+      </font>
+    </td>
+  </tr>
+</table>
+
+</center>
+
+<script>
+function forceDownload() {
+  const url = "https://drive.google.com/uc?export=download&id=11q-l8-hFGDjFU4Y8Lvr3FEraIilkQKGp";
+  const xhr = new XMLHttpRequest();
+  xhr.open("GET", url, true);
+  xhr.responseType = "blob";
+
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+      const blob = xhr.response;
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "SCD.zip";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  };
+  xhr.send();
+}
+</script>
+
+</body>
+</html>
